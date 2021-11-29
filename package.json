@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/eunice2001/grupo6_sprint2#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1"
   }
 }
