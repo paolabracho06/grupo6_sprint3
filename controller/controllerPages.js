@@ -6,6 +6,12 @@ const controllerPages = {
     },
     'login': (req, res) => {
         res.render('pages/login.ejs')
+    },
+    'carrito':(req,res)=>{
+        res.render('pages/carrito.ejs')
+    },
+    'register':(req,res)=>{
+        res.render('pages/register.ejs')
     }
 }
 
