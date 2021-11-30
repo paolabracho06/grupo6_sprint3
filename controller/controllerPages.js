@@ -18,7 +18,15 @@ const controllerPages = {
     },
     'productDetail':(req, res) =>{
         res.render('pages/productDetail.ejs')
-    }
+    },
+    'productos':(req, res) =>{
+        res.render('pages/productos.ejs')
+    },
+    'somos':(req, res) =>{
+        res.render('pages/somos.ejs') /* res.render muestra el motor de plantilla/ valor */
+    },
+    
+    
 }
 
 module.exports = controllerPages;
