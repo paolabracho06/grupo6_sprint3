@@ -7,11 +7,17 @@ const controllerPages = {
     'login': (req, res) => {
         res.render('pages/login.ejs')
     },
-    'carrito':(req,res)=>{
+    'carrito':(req,res) =>{
         res.render('pages/carrito.ejs')
     },
-    'register':(req,res)=>{
+    'register':(req,res) =>{
         res.render('pages/register.ejs')
+    },
+    'contacto':(req, res) =>{
+        res.render('pages/contacto.ejs') 
+    },
+    'productDetail':(req, res) =>{
+        res.render('pages/productDetail.ejs')
     }
 }
 
