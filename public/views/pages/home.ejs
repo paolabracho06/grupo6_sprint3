@@ -1,55 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juegueteria GUGU</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <script src="https://kit.fontawesome.com/5333537f63.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/home.css">
-</head>
-<body>
-    <header>
-        <!-- contenedor del logo -->
-        <div class="top-header">
-            <img src="img/logo_pequeño.png" alt="LOGO GUGU">
-        </div>
-        <!-- UL de producto,contacto y quienes somos -->
-        <nav class="cont-ul">
-            <ul class="lista-ul">
-                <li><a href="/">INICIO</a></li>
-                <li><a href="/productDetail">PRODUCTOS</a></li>
-                <li><a href="/contacto">CONTACTO</a></li>
-            </ul>
-        </nav>
+<%- include("../partials/head.ejs")  %> 
+<%- include("../partials/menuHeader.ejs")  %>  
 
-        <!-- contenedor con enlaces de buscar login y carrito -->
-        <div class="iconosYBuscar">   
-
-            <div class="contenedor-icons">
-                <form class="search-container" action="search" method="get">
-                    <input type="text" placeholder="BUSCAR">
-                    <button class="buttonSearch"><i class="fas fa-search"></i></button>
-                </form>
-            </div> 
-            <div class="burguer">
-                <i class="fas fa-hamburger"></i>
-            </div>
-        </div>
-        
-        <div class="user-car">
-            <div class="contenedor-icons">
-                <a href="/login" class="user"><i class="far fa-user"></i></a>
-            </div>
-            <div class="contenedor-icons">
-                <a href="/carrito"><i class="fas fa-shopping-cart"></i></a>
-            </div>   
-        </div>      
-    </header>
     <!-- Seccion del carrusel -->
     <section class="contenedor-carrusel">
         <!-- contenedor de box-imagenes -->
@@ -146,63 +97,5 @@
         <!-- <article class="contenidos"></article> -->
     </section>
     <!-- footer -->
-    <footer class="pie-de-pagina">
-        <div class="contenedores-pie">
-            <div class="cards">
-                 <h4>MEDIOS DE PAGO</h4>
-                <img src="img/icons/img/TARJETAS/visa@2x.png" alt="Visa" class="tarjetas">
-                <img src="img/icons/img/TARJETAS/banelco@2x.png" alt="Banelco" class="tarjetas">
-                <img src="img/icons/img/TARJETAS/mastercard@2x.png" alt="MasterCard" class="tarjetas">
-                <img src="img/icons/img/TARJETAS/rapipago@2x.png" alt="RapiPago" class="tarjetas">
-                <img src="img/icons/img/TARJETAS/mercadopago@2x.png" alt="MercadoPago" class="tarjetas">
-                <img src="img/icons/img/TARJETAS/tarjeta-naranja@2x.png" alt="Naranja" class="tarjetas">
-                <img src="img/icons/img/TARJETAS/pagofacil@2x.png" alt="PagoFacil" class="tarjetas">
-                <img src="img/icons/img/TARJETAS/tarjeta-shopping@2x.png" alt="TarjetaShopping" class="tarjetas">
-            </div>
-            <div class="cards">
-                <h4>ENVIOS</h4>
-                <img src="img/icons/img/TARJETAS/oca@2x.png" alt="oca">
-            </div>  
-        </div>
-        <div class="contenedores-pie">
-            <div class="cards">
-                <h4>CONTACTO</h4>
-                <div class="footer-items">
-                    <div> <i class="fas fa-phone-alt"></i><p>11 1234-5678</p></div> 
-                    <div><i class="fas fa-envelope"></i>
-                    <p>info@gugu.com</p></div> 
-                    <div><i class="fas fa-map-marker-alt"></i>
-                    <p>AV. 9 de julio-CABA</p></div>               
-                </div>
-            </div>
-            
-        </div>
-        <div class="contenedores-pie">
-            <div class="cards">
-                <h4>HORARIOS</h4>
-                <div class="footer-items">
-                    <div>
-                        <i class="far fa-clock"></i>
-                        <p>Lunes a Viernes de 10:30 a 13:00 <br> y de 15:00 a 18:00hs</p>
-                    </div>
-                    
-                </div>
-            </div>
-            
-           
-        </div>
-        <div class="contenedores-pie">
-            <div class="cards">
-                <h4>NUESTRAS REDES</h4>
-                <div class="footer-items">
-                    <div class="redes">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                </div>
-                
-            </div> 
-        </div>
-    </footer>
-</body>
-</html>
+<%- include("../partials/footerBase.ejs")  %>
+<%- include("../partials/footer.ejs")  %>
