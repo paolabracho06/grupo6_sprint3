@@ -11,7 +11,10 @@ app.use(express.static('public'));
 
 //requerimos rutas main
 const rutasPages = require('./routes/pagesRoutes');
+//requerimos rutas perfil
+const rutasPerfil= require('./routes/perfilRoutes')
 app.use('/',rutasPages);
+app.use('/perfil',rutasPerfil);
 
 
 
