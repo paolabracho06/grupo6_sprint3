@@ -13,8 +13,11 @@ app.use(express.static('public'));
 const rutasPages = require('./routes/pagesRoutes');
 //requerimos rutas perfil
 const rutasPerfil= require('./routes/perfilRoutes')
+//requerimos rutas admin
+const rutasAdmin= require('./routes/adminRoutes')
 app.use('/',rutasPages);
 app.use('/perfil',rutasPerfil);
+app.use('/admin',rutasAdmin);
 
 
 
