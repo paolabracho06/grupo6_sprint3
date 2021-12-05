@@ -493,7 +493,7 @@ list-style: none;
     margin:10px;
     flex-wrap: wrap;
     background: #F3F0D7;
-    width: 95%;
+    
 }
 .img-producto > img{
     width:200px;
@@ -501,16 +501,15 @@ list-style: none;
     margin: 5px 10px;
     padding: 10px;
 }
-.mailName, .estrella{
+.mailName,.estrella{
     min-width: 80px;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-
     margin-top: 10px;
 }
 .mailName>p{
-    margin-top:5px;
+    margin-top:10px;
 }
 .contenedor-img_usuario{
     background-color: #fff;
@@ -525,7 +524,7 @@ list-style: none;
     border:1px solid black;
 }
 .description > h3{
-    margin:0px 20px;
+    margin:10px 20px;
     color:red;
 }
 .seccion-usuario_perfil-compras{
@@ -541,6 +540,28 @@ list-style: none;
 .compras-usuario>h2{
     text-align: center;
 }
+.estrella{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    
+}
+.estrella >.start-widget input{
+    display:none;
+}
+.start-widget{
+    margin-top: 10px;
+    font-size: 30px;
+    color: #444;
+    /* padding: 10px; */
+    float:right;
+    transition: all .2s ease;
+}
+.start-widget>label:hover{
+    color: #fd4;
+    text-shadow: 0 0 20px #952;
+}
+/* Por el momento solo funciona con hover, con js se mejoraria */
 /* ^Finalizo CSS de Perfil de usuario ^ */
 @media only screen and (min-width: 768px){
     /*header*/
@@ -641,14 +662,14 @@ list-style: none;
     .contenedor-datos-usuario>div{
         margin: 0px 10px;
     }
-    .mailName, .estrella{
+    .mailName,.estrella{
         min-width: 80px;
         display: flex;
         flex-direction: column;
         align-items:flex-start;
         justify-content:space-evenly;
         margin-top: 10px;
-    }
+    } 
     /* ^Finalizo CSS de Perfil de usuario ^ */
     
 }
