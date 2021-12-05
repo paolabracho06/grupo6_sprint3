@@ -479,6 +479,69 @@ list-style: none;
 .tabletHeader{
     display: none;
 }
+/* CSS de perfil de usuario */
+.seccion-usuario{
+    display: flex;
+    flex-direction: column;
+    margin-top:100px;
+    align-items: center;
+}
+.seccion-usuario_perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:10px;
+    flex-wrap: wrap;
+    background: #F3F0D7;
+    width: 95%;
+}
+.img-producto > img{
+    width:200px;
+    height: 200px;
+    margin: 5px 10px;
+    padding: 10px;
+}
+.mailName, .estrella{
+    min-width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+
+    margin-top: 10px;
+}
+.mailName>p{
+    margin-top:5px;
+}
+.contenedor-img_usuario{
+    background-color: #fff;
+}
+.seccion-usuario_perfil > div{
+    margin: 15px 10px;
+}
+.compras{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border:1px solid black;
+}
+.description > h3{
+    margin:0px 20px;
+    color:red;
+}
+.seccion-usuario_perfil-compras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:10px;
+    flex-wrap: wrap;
+}
+.seccion-usuario_perfil-compras>div{
+    margin-top:10px;
+}
+.compras-usuario>h2{
+    text-align: center;
+}
+/* ^Finalizo CSS de Perfil de usuario ^ */
 @media only screen and (min-width: 768px){
     /*header*/
     .searchFormHeader > input{
@@ -560,6 +623,34 @@ list-style: none;
     .pagosEnvios { grid-area: 1 / 1 / 6 / 2; }
     .contactoFooter { grid-area: 1 / 2 / 6 / 3; }
     .redesFooter { grid-area: 1 / 3 / 6 / 4; }
+    /* CSS de perfil de usuario */
+    .seccion-usuario_perfil-compras{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin:10px;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .contenedor-datos-usuario{
+        display: flex;
+        justify-content: space-evenly;
+        margin:10px;
+        flex-wrap: wrap;
+    }
+    .contenedor-datos-usuario>div{
+        margin: 0px 10px;
+    }
+    .mailName, .estrella{
+        min-width: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content:space-evenly;
+        margin-top: 10px;
+    }
+    /* ^Finalizo CSS de Perfil de usuario ^ */
+    
 }
 @media only screen and (min-width: 1024px){
     .header{
@@ -626,4 +717,5 @@ list-style: none;
     .redesListFooter > li{
         font-size: 1.5rem;
     }
+
 }

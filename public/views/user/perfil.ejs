@@ -5,31 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/prueba.css">
-    <link rel="stylesheet" href="/css/perfilDeUsuario.css">
+    <%- include ('../partials/head') %> 
+    <!-- <link rel="stylesheet" href="/css/perfilDeUsuario.css"> -->
 </head>
 <body>
     <%- include("../partials/menuHeader.ejs")  %>
-    <section class="datoUsuario">
+    <section class="seccion-usuario">
         
-        <article class="datosUsuario">
-            <div class="contenedor-img">
-                <img src="" alt="foto perfil">
+        <article class="seccion-usuario_perfil">
+            <div class="contenedor-datos-usuario">
+                <div class="contenedor-img_usuario">
+                    <img src="/img/logo_pequeño.png" alt="foto perfil">
+                </div>
+                <div class="mailName">
+                    <p class="name"> un nombre</p>
+                    <p class="mail"> exampledemail@algo.algo</p>
+                </div>
+                <div class="estrella">
+                    <p>averiguar las estrellas como colocarlas</p>
+                </div>
             </div>
-            <div class="mailName">
-                <p class="name"> un nombre</p>
-                <p class="mail"> un mail</p>
-            </div>
-            <div calss="estrellas">
-                <p>averiguar las estrellas como colocarlas</p>
-            </div>
+            
         </article>
-        <article class="datosUsuario">
+        <div class="compras-usuario">
+            <h2>Compras</h2>
+        </div>
+        <article class="seccion-usuario_perfil-compras">
             <div class="compras">
                 <div class="img-producto">
-                    <img src="" alt="productoX">
+                    <img src="/img/icons/img/baby_0_24.jpg" alt="productoX">
                 </div>
                 <div class="description">
                     <h3>Producto x</h3>
@@ -37,25 +41,20 @@
             </div>
             <div class="compras">
                 <div class="img-producto">
-                    <img src="" alt="productoX">
+                    <img src="/img/icons/img/edad_2_3.jpg" alt="productoX">
                 </div>
                 <div class="description">
                     <h3>Producto x</h3>
                 </div>
-            </div>
-            <div class="compras">
-                <div class="img-producto"></div>
-                <div class="description"></div>
             </div>
             <div class="compras">
                 <div class="img-producto">
-                    <img src="" alt="productoX">
+                    <img src="/img/icons/img/de_4_6.jpg" alt="productox">
                 </div>
                 <div class="description">
                     <h3>Producto x</h3>
                 </div>
             </div>
-
         </article>
     </section>
     <%- include("../partials/footerBase.ejs")  %>
