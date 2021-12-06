@@ -243,7 +243,7 @@ list-style: none;
     display: flex;
     align-items: end;
     justify-content: center;
-    margin: 0 auto;
+    margin: 100px auto 0 auto;
     flex-wrap: wrap;
 }
 .contRegisTitu > h3{
@@ -504,6 +504,12 @@ list-style: none;
     }
     .contenedor-imgHome > div > h4{
         font-size: 1rem;
+    }
+    .bannerInfoHome{
+        display: flex;
+    }
+    .categoriasHome > h3{
+        border-top: none;
     }
     /*HOME FIN*/
     /******** REGISTRO SECCION INICIO ********/
