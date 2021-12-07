@@ -7,6 +7,9 @@ const controllerAdmin={
     },
     addProduct:(req,res)=>{
         res.render('admin/product/addProduct.ejs')
+    },
+    changeProduct:(req,res)=>{
+        res.render('admin/product/changeProduct.ejs')
     }
 }
 module.exports=controllerAdmin;
