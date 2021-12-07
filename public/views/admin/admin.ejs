@@ -9,28 +9,30 @@
     <%- include("../partials/head")  %> 
 </head>
 <body>
-    <%- include("../partials/admHeader")  %> 
-    <section class="contAdminPrin">
-        <canvas id="InfoAdminPrin"></canvas>
-        <!-- <div class="AdminPrinInfo">
-            <div class="AdminPrinInfoItem">
-                <h3>45</h3>
-                <h5>usuarios</h5>
+    <div class="contAdminMain">  
+        <%- include("../partials/admHeader")  %> 
+        <section class="contAdminPrin">
+            <canvas id="InfoAdminPrin"></canvas>
+            <!-- <div class="AdminPrinInfo">
+                <div class="AdminPrinInfoItem">
+                    <h3>45</h3>
+                    <h5>usuarios</h5>
+                </div>
+                <div class="AdminPrinInfoItem">
+                    <h3>150</h3>
+                    <h5>articulos</h5>
+                </div>
+                <div class="AdminPrinInfoItem">
+                    <h3>3</h3>
+                    <h5>categorias</h5>
+                </div>
+                <div class="AdminPrinInfoItem">
+                    <h3>2</h3>
+                    <h5>promos</h5>
+                </div> -->
             </div>
-            <div class="AdminPrinInfoItem">
-                <h3>150</h3>
-                <h5>articulos</h5>
-            </div>
-            <div class="AdminPrinInfoItem">
-                <h3>3</h3>
-                <h5>categorias</h5>
-            </div>
-            <div class="AdminPrinInfoItem">
-                <h3>2</h3>
-                <h5>promos</h5>
-            </div> -->
-        </div>
-    </section>
+        </section>
+    </div>
     <script type="text/javascript">
         let grafica = document.getElementById("InfoAdminPrin").getContext("2d");
         let miModifica = new Chart(grafica,{

@@ -5,5 +5,6 @@ const controllerAdmin = require('../controller/controllerAdmin')
 router.get('/', controllerAdmin.index);
 router.get('/stock', controllerAdmin.stock);
 router.get('/productAdd', controllerAdmin.addProduct);
+router.get('/productAdd2', controllerAdmin.addProduct2);
 
 module.exports = router;
