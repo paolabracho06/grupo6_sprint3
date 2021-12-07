@@ -10,6 +10,9 @@ const controllerAdmin={
     },
     addProduct2:(req,res)=>{
         res.render('admin/product/addProduct2.ejs')
+    },
+    changeProduct:(req,res)=>{
+        res.render('admin/product/changeProduct.ejs')
     }
 }
 module.exports=controllerAdmin;
