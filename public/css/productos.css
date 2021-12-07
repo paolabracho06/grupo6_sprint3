@@ -32,6 +32,13 @@
     text-decoration: none;
 }
 /* Inicia contenedor de productos */
+.products-lista{
+    margin: 5px 0;
+    display: flex;
+}
+.products-lista-categorias-desktop{
+    display: none;
+}
 .contenedor-producto-info>p,.contenedor-producto-cuota>p{
     font-size: 1rem;
 }
@@ -41,9 +48,10 @@
     flex-wrap: wrap;
 }
 .products-lista-articulos-contenedor_producto{
-    margin: 3px 10px;
+    
+    margin: 16px 10px;
     background-color: #fff;
-    padding: 15px;
+    padding: 8px;
     display: flex;
     flex-direction: column;
     width: 45%;
@@ -69,4 +77,62 @@
 .products-lista-articulos-contenedor_producto>div,img{
     margin:2px 0;
 }
+/* ocultos para phone */
+.filter-products-desktop{
+    display: none;
+}
+.products-lista-categorias-desktop{
+    display: none;
+}
 
+@media only screen and (min-width: 768px){
+    .products-lista-categorias-desktop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .filter-products-desktop{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .filter-products{
+        display: none;
+    }
+    .contenedor-categorias-lista>ul>li,a{
+        list-style: none;
+        margin:5px 0;
+        text-decoration: none;
+        color:#000;
+    }
+    .contenedor-categorias-lista>ul>li:hover{
+        text-decoration: underline;
+        display: block;        
+    }
+    .products-lista-articulos-contenedor_producto{
+        width:30%;
+        min-width: 150px;
+        max-width: 250px;
+    }
+    .products-lista-articulos-contenedor_producto > img{
+        min-width: 130px;
+        width: 90%;
+        height: 90%;
+        max-width: 230px;
+    }
+    .contenedor-producto-info > p, .contenedor-producto-cuota > p{
+        font-size: 0.84rem;
+    }
+    .contenedor-producto-cuota > p{
+        font-weight: bold;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .contenedor-producto-info > p, .contenedor-producto-cuota > p{
+        font-size: 1rem;
+    }
+    
+    .products-lista-articulos {
+        width: 90%;
+        flex-wrap: wrap;
+    }
+}
