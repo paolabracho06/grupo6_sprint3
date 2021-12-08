@@ -15,6 +15,9 @@
     padding: 10px;
     outline: none;
 }
+.adminAddProductForm > div > label{
+    margin-right: 4px;
+}
 .adminAddProductForm > div{
     display: flex;
     justify-content: space-between;
