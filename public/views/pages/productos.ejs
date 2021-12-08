@@ -56,7 +56,6 @@
                 </ul>
             </div>
         </article>
-
         <article class="products-lista-articulos">
             <% db.forEach(element => { %>
                 <div class="products-lista-articulos-contenedor_producto">
@@ -65,13 +64,16 @@
                         <p><%= element.name %> </p>
                         <p>$<%= element.precio %> </p>
                     </div>
-                    <div class="contenedor-producto-cuota">
-                        <% if (element.offPorcen) { %>
+                    <% if (element.offPorcen) { %>
+                        <div class="contenedor-producto-cuota">
                             <p>Hasta <%=element.offPorcen%>% de descuento  </p>
-                        <% } else { %><% } %> 
-                    </div>
+                        </div>
+                    <% } else { %><% } %> 
+                    
                 </div>
             <% }) %>
+        </article>
+    </section>
     <%- include('../partials/footerBase')  %> 
 </body>
 </html>
