@@ -390,6 +390,59 @@ list-style: none;
 }
 /******** ADMIN SECCION FIN ********/
 
+/********INICIO DE CHANGE PRODUCT ADMIN***/
+.changeProduct1{
+    display: flex;
+}
+.changeProduct2{
+    padding: 20px;
+    background: #F3F0D7;
+    border: 1px solid #000;
+    margin: 5px;
+    width: 100%;
+}
+.changeProduct2 > form{
+    display: flex;
+    justify-content: space-around;
+}
+.form-changeProduct{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+.form-changeProduct > label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+}
+.form-changeProduct > input{
+    width: 60%;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: solid 1px rgb(102, 33, 33);
+}
+.form-changeProduct > input[type="file"]{
+    width:auto;
+    border: none;
+}
+
+.changeProductFile{
+    width: 50;
+}
+.changeProductButtons{
+    width: 50%;
+    margin-left: 50px;
+}
+.changeProductButtons > button{
+    padding: 8px;
+    border-radius: 20px;
+    background-color: #CEE5D0;
+    border: solid 2px #c7c7c7;
+}
+/********FIN DE CHANGE PRODUCT EN ADMIN*****/
+
 
  /****LOGIN****/
  .sectionLogin{
