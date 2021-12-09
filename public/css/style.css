@@ -228,7 +228,7 @@ list-style: none;
     background: #F3F0D7;
     width: 80%;
     padding-bottom: 5%;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 100px auto;
     border:1px solid #000;
     border-radius: 5px;
 }
@@ -253,6 +253,7 @@ list-style: none;
 }
 .contRegisTitu > div > img{
     width: 100%;
+    margin-bottom: -20px;
 }
 .contRegisTitu > div{
     width: 20vw;
@@ -284,10 +285,15 @@ list-style: none;
     background-color: #b0c5b1;
     transition-duration: 0.2s;
 }
-.registerForm p a{
+.registerForm a{
     font-weight: bold;
     text-decoration: none;
     color: #FF7878;
+    font-size: 1.2rem;
+}
+.registerForm p{
+    font-size: 1.2rem;
+    padding: 15px;
 }
 /******** REGISTRO SECCION FIN ********/
 /******** ADMIN SECCION INICIO ********/
@@ -510,6 +516,10 @@ list-style: none;
     text-decoration: none;
     color: #FF7878;
     font-weight: bold;
+    font-size: 1.2rem;
+}
+.divLogin2 p{
+    font-size: 1.2rem;
 }
 .recordarUser{
   display: flex;
