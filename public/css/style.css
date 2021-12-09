@@ -427,7 +427,7 @@ list-style: none;
     padding: 8px;
     border-radius: 10px;
     margin-bottom: 10px;
-    border: solid 1px rgb(102, 33, 33);
+    border: solid 1px #E0C097;
 }
 .form-changeProduct > input[type="file"]{
     width:auto;
@@ -443,9 +443,10 @@ list-style: none;
 }
 .changeProductButtons > button{
     padding: 8px;
-    border-radius: 20px;
-    background-color: #CEE5D0;
-    border: solid 2px #c7c7c7;
+    width: auto;
+    border: none;
+    background: #FF7878;
+    border-radius: 5px;
 }
 /********FIN DE CHANGE PRODUCT EN ADMIN*****/
 
