@@ -287,7 +287,7 @@ list-style: none;
 .registerForm p a{
     font-weight: bold;
     text-decoration: none;
-    color: brown;
+    color: #FF7878;
 }
 /******** REGISTRO SECCION FIN ********/
 /******** ADMIN SECCION INICIO ********/
@@ -449,8 +449,8 @@ list-style: none;
     background: #F3F0D7;
     width: 70%;
     margin: 0 auto 10%;
-    border-left:2px solid rgb(102, 33, 33);
-    border-right:2px solid rgb(102, 33, 33);
+    border-left:2px solid #FF7878;
+    border-right:2px solid #FF7878;
     border-radius: 5px;
 }
 .divLogin{
@@ -508,7 +508,7 @@ list-style: none;
 
 .divLogin2 a{
     text-decoration: none;
-    color: brown;
+    color: #FF7878;
     font-weight: bold;
 }
 .recordarUser{
